@@ -1,0 +1,11 @@
+<label>Id:</label><input #id type="number"><button
+  (click)="getEmployee(id.value)" class="btn">Submit</button>
+
+
+
+<div>
+  <p>id:{{loadedEmployee.id}}</p>
+  <p>name:{{loadedEmployee.name}}</p>
+  <p>animal:{{loadedEmployee.animal}}</p>
+  <p [style.background-color]="loadedEmployee.color">color:{{loadedEmployee.color}}</p>
+</div>
